@@ -1,0 +1,11 @@
+welcome: "THIS IS APP 1 - UPDATED "
+replicaCount: 3
+
+ingress:
+  enabled: true
+  className: "nginx"
+  hosts:
+    - host: myweb.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
